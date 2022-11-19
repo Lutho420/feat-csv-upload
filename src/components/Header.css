@@ -1,0 +1,108 @@
+header {
+    padding: 8px 60px;
+    box-shadow: 6px 4px 4px grey;
+    width: 100%;
+    box-sizing: border-box;
+}
+img, input {
+    display: block;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+.home-logo {
+    width: 164px;
+    height: 48px;
+}
+.search-bar-profile-container {
+    display: flex;
+    gap: 10px;
+}
+#search {
+    width: 100%;
+    max-width: 375px;
+    min-width: 28px;
+    border-radius: 8px;
+    border: 1px solid #091540;
+    padding: 0px auto 0px 10px;
+    height: 40px;
+}
+.profile {
+    width: 40px;
+    height: 40px;
+}
+/*modal stryling*/
+body.active-modal {
+    overflow-y: hidden;
+}
+.modal, .overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+/*
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+}*/
+.modal {
+    max-width: 212px;
+    width: 211px;
+    position: fixed;
+    top: 68px;
+    left: 2010px;
+    border-radius: 8px;
+    padding: 8px 8px 8px 0;
+    background: #fff;
+}
+.modal-content {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background: #F1F1F1;
+    padding: 14px 28px;
+    border-radius: 16px;
+    max-width: 600px;
+    min-width: 300px;
+    width: 450px;
+}
+.modal-content-list {
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+}
+.modal-list-item {
+    max-width: fit-content;
+    margin-bottom: 1em;
+}
+.modal-list-item-link {
+    text-decoration: none;
+    color: #121212;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.settings a, .settings img {
+    display: block;
+}
+.name-link {
+    color: #C04A1C;
+}
+.settings-link {
+    display: flex;
+    justify-content: space-between;
+}
+/*media queries*/
+@media screen and (max-width: 768px) {
+    header {
+        padding: 8px 2em;
+    }
+}
+@media screen and (max-width: 450px) {
+    header {
+        padding: 8px 1em;
+    }
+}
